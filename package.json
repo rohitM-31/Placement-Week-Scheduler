@@ -1,0 +1,16 @@
+{
+  "name": "mirai-placement-scheduler",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Mirai Labs — Placement Week Scheduler (MERN)",
+  "scripts": {
+    "install:all": "npm install --prefix backend && npm install --prefix frontend",
+    "dev": "concurrently -n backend,frontend -c blue,green \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\"",
+    "seed": "npm run seed --prefix backend",
+    "test:scheduler": "npm run test:scheduler --prefix backend",
+    "build:frontend": "npm run build --prefix frontend"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

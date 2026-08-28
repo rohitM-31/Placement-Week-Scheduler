@@ -1,0 +1,29 @@
+{
+  "name": "placement-scheduler-backend",
+  "version": "1.0.0",
+  "description": "Mirai Labs Placement Week Scheduler - backend (Express + MongoDB/Mongoose)",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "seed": "node src/scripts/seed.js",
+    "test:scheduler": "node src/tests/scheduler.test.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.5.1",
+    "morgan": "^1.10.0"
+  },
+  "optionalDependencies": {
+    "mongodb-memory-server": "^9.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
